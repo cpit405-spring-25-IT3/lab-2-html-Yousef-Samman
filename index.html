@@ -3,6 +3,27 @@
 <head>
   <meta charset="utf-8">
   <title>CPIT-405 lab 2</title>
+  <style>
+    table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd; /* Adds horizontal lines */
+    border-top: none; /* Removes top border */
+    border-left: none; /* Removes vertical left border */
+    border-right: none; /* Removes vertical right border */
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    border-bottom: 2px solid #ddd; /* Slightly thicker line for headers */
+}
+
+
+</style>
 </head>
 
 <h1>Lab 2: HTML</h1>
@@ -62,25 +83,36 @@
   <dt>Horsepower (hp) is a unit of measurement used to describe the power output of a car’s engine. It indicates how quickly the
      engine can do work, like turning the wheels and moving the vehicle.</dt>
 
-     <table border = "1">
-       <tr>
-        <th>ID</th><br>
-        <th>Name</th>
-        <th>Position</th>
-       </tr>
-       <tr>
-        <td>2235898</td>
-        <td>Yousef</td>
-        <td>CEO</td>
-      </tr>
-      <tr>
-        <td>2455676</td>
-        <td>Sami</td>
-        <td>Sales Manager</td>
-      </tr>
-     </table>
+     <br><br><br><br>
+
+     <table>
+      <thead>
+          <tr>
+              <th>Basics</th>
+              <th>Front-end Frameworks</th>
+              <th>Server-side Frameworks</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>HTML</td>
+              <td>React</td>
+              <td>Spring</td>
+          </tr>
+          <tr>
+              <td>CSS</td>
+              <td>Angular</td>
+              <td>Django</td>
+          </tr>
+          <tr>
+              <td>JS</td>
+              <td>Vue</td>
+              <td>Laravel</td>
+          </tr>
+      </tbody>
+  </table>
      
-     <br><br><br>
+     <br><br><br><br><br>
 
      <form action="/submit_form" method="post">
       <label for="username">Login:</label>
